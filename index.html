@@ -8,22 +8,34 @@
 <body>
     <form action="" method="post">
         <p>nome:</p>
-        <input type="text" name="nome" placeholder="nome completo">
+        <input type="text" name="nome" placeholder="nome completo" required>
         <p>email:</p>
-        <input type="email" name="email" placeholder="seuemail@email.com" value="@gmail.com">
+        <input type="email" name="email" placeholder="seuemail@email.com" value="@gmail.com" required>
         <p>CPF:</p>
-        <input type="number" name="CPF" placeholder="XXX XXX XXX XX">
-        <p>Já foi preso</p>
+        <input type="number" name="CPF" placeholder="XXX XXX XXX XX" required>
+        <p>Já foi preso?</p>
         <input type="radio" name="antecedentes criminais" value="sim" checked> com certeza
         <input type="radio" name="antecedentes criminais" value="não"> sou santo
 
+        <p>de onde é?</p>
+        <select name="continentalidade">
+            <option value="1">américa:sul</option>
+            <option value="1">américa:norte</option>
+            <option value="1">áfrica</option>
+            <option value="1">europa</option>
+            <option value="1">ásia</option>
+            <option value="1">oceania</option>
+            <option value="1">antártida</option>
+            <option value="1">atlântida</option>
+        </select>
+
+        <p>qual o motivo de contatar a fundação?</p>
+        <textarea name="motivo de nos contatar" required></textarea>
 
 
-
-
-
-        
-        <input type="checkbox" name="novidades" checked> aceito receber novidades da empresa por e-mail da empresa
+        <input type="checkbox" name="novidades" checked required> aceito receber novidades da fundação por e-mail da empresa
+        <button type="submit">enviar</button>
+        <button type="reset">apagar</button>
     </form>
 </body>
 </html>
